@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import EditTable from './EditTable';
 
 const Navbar = ({handleOpenSQLModal,activeTab,handleTabClick}) => {
   const [showOptions, setShowOptions] = useState(false);
