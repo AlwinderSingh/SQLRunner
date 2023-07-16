@@ -1,0 +1,364 @@
+.App {
+  text-align: center;
+}
+.sql-input-container {
+  margin: 20px;
+}
+
+.sql-input-container label {
+  font-size: 20px;
+}
+
+.sql-input-container textarea {
+  margin: 10px 0;
+  padding: 5px;
+  resize: vertical;
+}
+
+.sql-input-container button {
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.card {
+  margin:30px;
+  border:10px;
+ 
+}
+.history-table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.rounded-rectangle {
+  margin-top: 50px;
+  width:80%;
+  background-color: lightblue;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.pagination-label{
+  margin-top: 7px;
+}
+.title {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.banner {
+  background-color: transparent;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  z-index: -3;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    clip-path: circle(0% at 0% 0%);
+    background-color: transparent;
+  }
+  100% {
+    opacity: 1;
+    clip-path: circle(100% at 50% 50%);
+    background-color: #007bff;
+  }
+}
+
+
+
+.banner-text {
+  font-size: 36px;
+  color: white;
+  opacity: 100;
+  
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-left: 50px; /* Adjusted margin-left */
+}
+
+.nav-tabs {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+  margin-right: 30px; /* Adjusted margin-right */
+  cursor: pointer;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item.active a {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 100%;
+  height: 4px;
+  background-color: #007bff;
+  border-radius: 10px;
+  animation: tabHighlight 0.3s ease-in-out forwards;
+}
+
+@keyframes tabHighlight {
+  0% {
+    transform: translateX(-50%) scaleX(0);
+  }
+  100% {
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+.options-list {
+  position: absolute;
+  background-color: #f1f1f1;
+  padding: 10px;
+  top: 40px;
+  right: 0;
+  display: none;
+  list-style-type: none;
+  border-radius: 8px;
+  transform-origin: top right;
+  opacity: 0;
+  transform: scaleY(0);
+  width:300px
+}
+
+.options:hover .options-list {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+/* Rest of the CSS code... */
+
+.options-list li {
+  cursor: pointer;
+  padding: 8px 12px; /* Add padding as needed */
+  text-align: left; /* Align items to the left */
+  position: relative;
+}
+
+.options-list li::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 10px;
+  background-color: transparent; /* Set the initial background color as transparent */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.options-list li:hover::before {
+  background-color: #007bff; /* Change the color to your desired color */
+  z-index: -1; /* Move the pseudo-element behind the text */
+}
+
+.options-list li:hover {
+  color: white; /* Change the text color to white */
+}
+
+.options-list li.active {
+  color: white; /* Change the text color of the selected item to white */
+}
+
+.options-list li.active::before {
+  background-color: #007bff; /* Change the background color of the selected item */
+}
+
+/* Rest of the CSS code... */
+
+
+
+.options {
+  position: relative;
+}
+
+.green-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.plus-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.options-list {
+  position: absolute;
+  background-color: #f1f1f1;
+  padding: 10px;
+  top: 40px;
+  right: 0;
+  display: none;
+  list-style-type: none;
+}
+
+.options-list li {
+  cursor: pointer;
+}
+
+.options-list li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.options-list li a:hover {
+  color: #0056b3;
+}
+
+/* Show options list on hover */
+.options:hover .options-list {
+  display: block;
+}
+
+.green-button:hover {
+  background-color: #45a049;
+}
+
+/* Rest of the existing styles */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.green-card {
+  background-color: #4caf50;
+  color: white;
+}
+
+.white-card {
+  background-color: white;
+  color: #333;
+}
+
+.card-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.recent-queries-heading {
+  display: flex;
+  align-items: center;
+}
+
+.recent-queries-heading h2 {
+  margin-right: 10px;
+}
+

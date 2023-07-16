@@ -1,0 +1,6 @@
+SELECT S.no,name,class, from EMP where EMPCODE>100;
+SELECT S.no,name,class, from EMP where EMPCODE>200;
+SELECT S.no,name,class, from EMP where EMPCODE>300;
+SELECT S.no,name,class, from EMP where EMPCODE>400;
+SELECT S.no,name,class, from EMP where EMPCODE>500;
+SELECT S.no,name,class, from EMP where EMPCODE>600;
