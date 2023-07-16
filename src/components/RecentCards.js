@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 
 const RecentCards = ({ fileContent,handleFileContent,execute,filePath,handleOpenSQLModal }) => {
-  const [hoveredCard, setHoveredCard] = useState(null);
+  const [, setHoveredCard] = useState(null);
 
   const handleCardHover = (index) => {
     setHoveredCard(index);
@@ -32,11 +32,9 @@ const RecentCards = ({ fileContent,handleFileContent,execute,filePath,handleOpen
     if (filePath) {
       readFile();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filePath]);
-  React.useEffect(()=>{
-    console.log(fileContent)
-  },[fileContent.length])
- 
+  
   
   const renderCards = () => {
     if (!fileContent) return null;
@@ -53,7 +51,7 @@ const RecentCards = ({ fileContent,handleFileContent,execute,filePath,handleOpen
               <Card bg="success">
                 <Card.Body>
                   <Card.Title>
-                    <a onClick={() => addSql()} style={{ cursor: 'pointer', fontSize: '48px', fontWeight: 'bold' }}>+</a>
+                    <div onClick={() => addSql()} style={{ cursor: 'pointer', fontSize: '48px', fontWeight: 'bold' }}>+</div>
                   </Card.Title>
                 </Card.Body>
               </Card>

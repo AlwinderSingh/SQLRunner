@@ -5,13 +5,10 @@ function EditTable({ sql,handleOpenSQLModal,handleEditSQL }) {
   handleEditSQL(item)
   handleOpenSQLModal()
   }
-  const deleteSQL=(item)=>{
-      
-  }
   return (
     <div className="history-table-container">
       <div className="rounded-rectangle">
-        <h3>History</h3>
+        <h3>Edit Previous Queries</h3>
         <TableComponent 
           data={sql.map((item, index) => ({
             'S.no': index + 1,

@@ -11,9 +11,7 @@ const ModalWithTable = ({ currSql, csvData, showTable, setShowTable }) => {
 
   const totalPages = Math.ceil(csvData.length / rowsPerPage);
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
+  
 
   const handlePrevPage = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));

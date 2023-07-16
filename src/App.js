@@ -1,10 +1,8 @@
-import React, { useState,useContext } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
 import RecentCards from './components/RecentCards';
-import { Modal } from 'react-bootstrap';
 import Papa from 'papaparse';
 import ModalWithTable from './components/ModalWithTable';
 import HistoryTable from "./components/HistoryTable"
