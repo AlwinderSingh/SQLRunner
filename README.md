@@ -51,6 +51,10 @@ To decrease the load time and increase performance, the following optimizations 
 
 **Pagination**: The application employs pagination to display query results in smaller, manageable portions, reducing the initial load time and improving user experience when dealing with large datasets.
 
+## SnapShots
+![image](https://github.com/AlwinderSingh/SQLRunner/assets/100020772/983cb271-5994-4c49-a27d-cc5fca1a1a5b)
+
+
 ## Additional Notes
 
 - This project is a dummy application and does not have a backend or a query engine. It's meant for demonstration and learning purposes.
