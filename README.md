@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# AtlanSQL Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a web-based application called AtlanSQL, designed to run SQL queries and display the results within the application. The application accepts user-input SQL queries, executes them, and presents the corresponding table of data in response to each query. It provides a user-friendly interface for users to interact with the SQL queries and view the associated data.
 
-In the project directory, you can run:
+### Features:
+- SQL Query Execution: Users can enter SQL queries into the application, and the application will execute them and display the results in the form of a table.
 
-### `npm start`
+- Pagination: The application optimizes data presentation by using pagination. It displays query results in smaller, manageable portions, reducing the initial load time and improving user experience when dealing with large datasets.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Sorting: Users can sort the table data based on column values, allowing for easy data analysis.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- CSV Download: The application allows users to download query results in CSV format, facilitating data analysis outside the application.
 
-### `npm test`
+- History: Users can view a history of previous queries executed, making it convenient to revisit and re-run queries.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ReactJS: The JavaScript framework used for building the front-end of the web application.
+- HTML and CSS: Used for structuring and styling the user interface.
+- Pagination: Implemented to optimize the performance and loading time by displaying data in smaller, manageable chunks.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Major plugins or packages used in the project:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+= react-bootstrap: This package is used for UI components in conjunction with ReactJS. It provides a set of pre-styled and customizable components that integrate seamlessly with React applications, making the UI development process faster and more efficient.
 
-### `npm run eject`
+- papaparse: The papaparse library is utilized for parsing CSV data in the application. It simplifies the process of reading and parsing CSV files, allowing the application to process and display the data efficiently.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Page Load Time
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The page load time of the AtlanSQL web application has been optimized to ensure a smooth user experience. The performance was evaluated using the [PageSpeed Insights](https://pagespeed.web.dev/) tool.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Performance: 95
+- Accessibility: 90
+- Best Practices: 100
+- SEO: 100
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application has a solid performance score, providing users with a fast and efficient browsing experience.
 
-## Learn More
+## Optimization Techniques
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To decrease the load time and increase performance, the following optimizations were implemented:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Pagination**: The application employs pagination to display query results in smaller, manageable portions, reducing the initial load time and improving user experience when dealing with large datasets.
 
-### Code Splitting
+## Additional Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- This project is a dummy application and does not have a backend or a query engine. It's meant for demonstration and learning purposes.
+- Syntax validation and query validation were intentionally omitted to keep the focus on the primary functionality of the application.
+- The application uses dummy data sources for demonstration purposes, and the data and query do not need to be in sync.
+- The application allows users to execute multiple predefined queries and view corresponding tables of data.
+- Users can also edit and save previous queries for future reference.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to reach out if you have any questions or need further assistance with the AtlanSQL web application! Happy coding! 🚀
