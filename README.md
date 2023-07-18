@@ -45,7 +45,7 @@ The page load time of the AtlanSQL web application has been optimized to ensure 
 
 The application has a solid performance score, providing users with a fast and efficient browsing experience.
 
-## Optimization Techniques
+## Pagination
 
 To decrease the load time and increase performance, the following optimizations were implemented:
 
