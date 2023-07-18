@@ -36,7 +36,7 @@ The combination of ReactJS, PapaParse, and React Bootstrap allows for efficient 
 
 ## Page Load Time
 
-The page load time of the AtlanSQL web application has been optimized to ensure a smooth user experience. The performance was evaluated using the [PageSpeed Insights] (https://pagespeed.web.dev/analysis/http-atlansqldevrunner-netlify-app/ptkz8ps9br?form_factor=desktop) tool.
+The page load time of the AtlanSQL web application has been optimized to ensure a smooth user experience. The performance was evaluated using the [PageSpeed Insights](https://pagespeed.web.dev/analysis/http-atlansqldevrunner-netlify-app/ptkz8ps9br?form_factor=desktop) tool.
 
 - Performance: 95
 - Accessibility: 90
@@ -52,8 +52,7 @@ To decrease the load time and increase performance, the following optimizations 
 **Pagination**: The application employs pagination to display query results in smaller, manageable portions, reducing the initial load time and improving user experience when dealing with large datasets.
 
 ## SnapShots
-![image](https://github.com/AlwinderSingh/SQLRunner/assets/100020772/983cb271-5994-4c49-a27d-cc5fca1a1a5b)
-
+![image](https://github.com/AlwinderSingh/SQLRunner/assets/100020772/73d5f937-c795-49ca-8e57-8a3cc2f2600d)
 
 ## Additional Notes
 
